@@ -1,0 +1,73 @@
+Discussion about the length-normalization module
+
+Name: Zian Wang
+
+Since each step we add a new word to the sentence, the score of the new sentence will be added by a log probability. [1] 
+The basic beam search inevitable favors the shorter sentences. For example, although the probability that "is" shows after "He" is higher 
+than "said" shows after "He", the probability of "He said" is much more higher than "He is a good boy" because the latter sentence has 
+three more words, which means three more negative log-probabilities are added. Therefore, we use the length-normalization in 
+assignment 1 to make the beam search favors longer sentences. Because the final log-probability will be divided by the power of the
+length of the sentence, longer sentence's log-probability will be divided by a larger number, which makes the log-probability's absolute 
+value smaller. However, since the probability is between 0 and 1, the log-probability is always a negative number. Therefore, since the 
+longer sentence’s log-probability’s absolute value is smaller, the log-probability, or called the score, will be higher. So actually the length 
+normalization is used to make longer sentences have higher scores. Also, we can find that if we use higher power of the length of the 
+sentence, the longer sentences will be more favored.
+
+We will test the lambda between 0 and 1[1], and see the results.
+
+1. Pre_words: <s>
+Lambda = 0, 0.1, 0.2, ..., 1
+The results are all: <s> He said . </s>
+
+2. Pre_words: <s> He is a
+Lambda = 0, 0.1, 0.2, ..., 1
+The results are all: <s> He is a press conference here today . </s>
+
+3. Pre_words: <s> Press conference here Jordan signed a
+Lambda = 0, 0.1, 0.2, ..., 1
+The results are all: <s> Press conference here Jordan signed a press conference here today . </s>
+
+Here we can see that no matter which lambda we choose from 0 and 1, the results are the same. I also tried several sentences from 
+short one to a long one, but the results are still the same. Even the usually best lambda 0.6-0.7[1], produced the same results. In my 
+opinion, this has two reasons, the first is the collection is different. Maybe in our collection, the probabilities are relatively small, which 
+makes the length-normalization has very limited effect which cannot change the result. The second reason is we did not use the lambda 
+that are big enough. Although in the paper, the researchers limit the lambda between 0 and 1, we will try lambda bigger than 1.
+
+1. Pre_words: <s> This is a random
+Lambda = 0, 0.2, 0.5, 0.8, 1, 2, 3, 4, 5
+When lambda <= 1, results: <s> This is a random collection . </s>
+When lambda > 1, results: <s> This is a random collection does not be held in the United States , the two countries . </s>
+
+2. Pre_words: <s> She
+Lambda = 0, 0.2, 0.5, 0.8, 1, 2, 3, 4, 5
+When lambda <= 1, results: <s> She said . </s>
+When lambda > 1, results: <s> She said that he said that he said that he said that he said that he added . </s>
+
+3. Pre_words: <s> Jordan and Jordan signed Jordan
+Lambda = 0, 0.2, 0.5, 0.8, 1, 2, 3, 4, 5
+When lambda <= 3, results: <s> Jordan and Jordan signed Jordan . </s>
+When lambda > 3, results: <s> Jordan and Jordan signed Jordan will be held talks with the two countries , the two countries . </s>
+
+From these 3 test cases we can find that when we choose lambda larger than 1, the results will change. However, we can find that the 
+change is extreme because beam search will now choose the sentences that are of the maximum length. In other words, if we set 
+lambda <= 1, the beam search will still prefer the shorter sentences, and if we set lambda > 1, the beam search will prefer the longest 
+sentences. However, we can find in the third test case, we try “<s> Jordan and Jordan signed Jordan”, and only when lambda > 3 the 
+longest sentences are selected. Therefore, we cannot say that when lambda > 1, the longer sentences are always been preferred. In 
+conclusion, lambda has effects on deciding the length of the results. Then we try this test case.
+
+1.Pre_words: <s> He and she are random
+Lamda = 0, 0.3, 0.7, 1, 1.3, 1.7, 2, 2.3, 2.5, 3, 3.2
+When lambda < 3, results = <s> He and she are random collection . </s>
+When lambda >=3, results = <s> He and she are random collection does not be held in the United States , he added . </s>
+
+We can find that in this case, when lambda > 3 the longer sentences are selected. Therefore, we are more certain that 1 is not the 
+threshold that the search prefer longer sentence. However, we can find that the change is still large: either the shortest, or the longest 
+sentence is selected.
+
+Reference:
+[1] Wu, Yonghui et al. “Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation.” ArXiv abs/1609.08144 (2016): n. pag.
+
+
+
+
+

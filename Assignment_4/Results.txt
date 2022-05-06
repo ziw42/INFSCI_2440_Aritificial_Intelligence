@@ -1,0 +1,479 @@
+[meal, wonderful] appears in review 	[ 1 ]
+
+[California salad, huge] appears in review 	[ 1 ]
+
+[California salad, delicious] appears in review 	[ 1 ]
+
+[salad, huge] appears in review 	[ 1 ]
+
+[salad, delicious] appears in review 	[ 1 ]
+
+[stick, little] appears in review 	[ 1 ]
+
+[bread stick, little] appears in review 	[ 1 ]
+
+[bread stick, delicious] appears in review 	[ 1 ]
+
+[stick, delicious] appears in review 	[ 1 ]
+
+[Service, excellent] appears in review 	[ 1 ,   2 ]
+
+[This, place] appears in review 	[ 1 ]
+
+[place, great] appears in review 	[ 1 ]
+
+[experience, upscale] appears in review 	[ 1 ]
+
+[lunch experience, upscale] appears in review 	[ 1 ]
+
+[spots, other] appears in review 	[ 1 ]
+
+[Delicious restaurant, old] appears in review 	[ 2 ]
+
+[restaurant, old] appears in review 	[ 2 ]
+
+[bar restaurant, old] appears in review 	[ 2 ]
+
+[woodwork, ornate] appears in review 	[ 2 ]
+
+[tablecloths, white] appears in review 	[ 2 ]
+
+[potatoes, red] appears in review 	[ 2 ]
+
+[potatoes, skinned] appears in review 	[ 2 ]
+
+[potatoes, mashed] appears in review 	[ 2 ]
+
+[meat, tender] appears in review 	[ 2 ]
+
+[meat, flavorful] appears in review 	[ 2 ]
+
+[Cole slaw, delicious] appears in review 	[ 2 ]
+
+[slaw, delicious] appears in review 	[ 2 ]
+
+[atmosphere, nice] appears in review 	[ 3 ]
+
+[list, local] appears in review 	[ 3 ]
+
+[draft list, local] appears in review 	[ 3 ]
+
+[draft list, great] appears in review 	[ 3 ]
+
+[list, great] appears in review 	[ 3 ]
+
+[fish taco, world] appears in review 	[ 3 ]
+
+[taco, world] appears in review 	[ 3 ]
+
+[fish sandwich, world] appears in review 	[ 3 ]
+
+[sandwich, world] appears in review 	[ 3 ]
+
+[potions, HUGE] appears in review 	[ 3 ]
+
+[menu, huge] appears in review 	[ 3 ]
+
+[that, thing] appears in review 	[ 3 ]
+
+[thing, good] appears in review 	[ 3 ]
+
+[people, regulars] appears in review 	[ 3 ]
+
+[people, echoed] appears in review 	[ 3 ]
+
+[note, positive] appears in review 	[ 4 ]
+
+[meal, delicious] appears in review 	[ 4 ]
+
+[sandwich, grilled] appears in review 	[ 4 ]
+
+[chicken sandwich, grilled] appears in review 	[ 4 ]
+
+[waffle fries, amazing] appears in review 	[ 4 ]
+
+[fries, amazing] appears in review 	[ 4 ]
+
+[option, choose] appears in review 	[ 4 ]
+
+[toppings option, choose] appears in review 	[ 4 ]
+
+[toppings option, something] appears in review 	[ 4 ]
+
+[option, something] appears in review 	[ 4 ]
+
+[atmosphere, has] appears in review 	[ 4 ]
+
+[ambiance, nice] appears in review 	[ 4 ]
+
+[they, seemed] appears in review 	[ 4 ]
+
+[selection, great] appears in review 	[ 4 ]
+
+[server, rude] appears in review 	[ 4 ]
+
+[server, visited] appears in review 	[ 4 ]
+
+[meals, are] appears in review 	[ 4 ]
+
+[thing, note] appears in review 	[ 4 ]
+
+[restaurant, small] appears in review 	[ 4 ,   5 ]
+
+[tables, close] appears in review 	[ 4 ]
+
+[hostess, asked] appears in review 	[ 4 ]
+
+[table, OWN] appears in review 	[ 4 ]
+
+[ride, useless] appears in review 	[ 5 ]
+
+[Uber ride, useless] appears in review 	[ 5 ]
+
+[distance, walking] appears in review 	[ 5 ]
+
+[meals, best] appears in review 	[ 5 ]
+
+[fan, huge] appears in review 	[ 5 ]
+
+[Service, great] appears in review 	[ 5 ]
+
+[drinks, large] appears in review 	[ 5 ]
+
+[Girlfriend, ordered] appears in review 	[ 5 ]
+
+[sandwiches, French] appears in review 	[ 5 ]
+
+[dip sandwiches, French] appears in review 	[ 5 ]
+
+[restaurant, nice] appears in review 	[ 5 ]
+
+[atmosphere, great] appears in review 	[ 5 ]
+
+[food, great] appears in review 	[ 5 ]
+
+[place, rotation] appears in review 	[ 6 ]
+
+[rotation, regular] appears in review 	[ 6 ]
+
+[lunch rotation, regular] appears in review 	[ 6 ]
+
+[food, Excellent] appears in review 	[ 6 ]
+
+[Turkey Devonshire, awesome] appears in review 	[ 6 ]
+
+[Devonshire, awesome] appears in review 	[ 6 ]
+
+[Chicken tenders, disappoint] appears in review 	[ 6 ]
+
+[tenders, disappoint] appears in review 	[ 6 ]
+
+[deserts, recent] appears in review 	[ 6 ]
+
+[deserts, mini] appears in review 	[ 6 ]
+
+[bottle, deal] appears in review 	[ 6 ]
+
+[deal, great] appears in review 	[ 6 ]
+
+[draft selection, good] appears in review 	[ 6 ]
+
+[beer selection, good] appears in review 	[ 6 ]
+
+[selection, good] appears in review 	[ 6 ]
+
+[mugs, seem] appears in review 	[ 6 ]
+
+[They, undercooked] appears in review 	[ 7 ]
+
+[They, tasteless] appears in review 	[ 7 ]
+
+[quality, bad] appears in review 	[ 7 ]
+
+[They, care] appears in review 	[ 7 ]
+
+[humbleness, is] appears in review 	[ 7 ]
+
+[day, bad] appears in review 	[ 7 ]
+
+[food, Good] appears in review 	[ 8 ]
+
+[food, hearty] appears in review 	[ 8 ]
+
+[prices, decent] appears in review 	[ 8 ]
+
+[service, warm] appears in review 	[ 8 ]
+
+[beer fish, battered] appears in review 	[ 8 ]
+
+[fish, battered] appears in review 	[ 8 ]
+
+[Rainbow trout, treat] appears in review 	[ 8 ]
+
+[trout, treat] appears in review 	[ 8 ]
+
+[good, bad] appears in review 	[ 8 ]
+
+[service, Bad] appears in review 	[ 9 ]
+
+[fingers, homemade] appears in review 	[ 1 0 ]
+
+[chicken fingers, homemade] appears in review 	[ 1 0 ]
+
+[Burgers, good] appears in review 	[ 1 0 ]
+
+[beer, Good] appears in review 	[ 1 0 ]
+
+[beer, priced] appears in review 	[ 1 0 ]
+
+[value, great] appears in review 	[ 1 0 ]
+
+[menu, large] appears in review 	[ 1 1 ]
+
+[portions, larger] appears in review 	[ 1 1 ]
+
+[prices, reasonable] appears in review 	[ 1 1 ]
+
+[quality, excellent] appears in review 	[ 1 1 ]
+
+[They, have] appears in review 	[ 1 1 ,   2 0 ]
+
+[menu, entire] appears in review 	[ 1 1 ]
+
+[menu, dedicated] appears in review 	[ 1 1 ]
+
+[specialities, Other] appears in review 	[ 1 1 ]
+
+[specialities, cakes] appears in review 	[ 1 1 ]
+
+[wait, come] appears in review 	[ 1 1 ]
+
+[restaurant, favorites] appears in review 	[ 1 2 ]
+
+[favorites, top] appears in review 	[ 1 2 ]
+
+[favorites, local] appears in review 	[ 1 2 ]
+
+[restaurant, has] appears in review 	[ 1 2 ]
+
+[feeling, warm] appears in review 	[ 1 2 ]
+
+[They, offer] appears in review 	[ 1 2 ]
+
+[bottles, deal] appears in review 	[ 1 2 ]
+
+[deal, cheapest] appears in review 	[ 1 2 ]
+
+[wine deal, cheapest] appears in review 	[ 1 2 ]
+
+[you, find] appears in review 	[ 1 2 ]
+
+[portions, generous] appears in review 	[ 1 2 ]
+
+[order, particular] appears in review 	[ 1 2 ]
+
+[you, hungry] appears in review 	[ 1 2 ]
+
+[you, wait] appears in review 	[ 1 2 ]
+
+[course, main] appears in review 	[ 1 2 ]
+
+[soup, French] appears in review 	[ 1 2 ]
+
+[onion soup, French] appears in review 	[ 1 2 ]
+
+[Summer, last] appears in review 	[ 1 3 ]
+
+[time, wonderful] appears in review 	[ 1 3 ]
+
+[food, excellent] appears in review 	[ 1 3 ]
+
+[food, priced] appears in review 	[ 1 3 ]
+
+[service, solid] appears in review 	[ 1 3 ]
+
+[group, larger] appears in review 	[ 1 3 ]
+
+[Grill, Best] appears in review 	[ 1 4 ]
+
+[Reuben Grill, Best] appears in review 	[ 1 4 ]
+
+[Reuben Grill, made] appears in review 	[ 1 4 ]
+
+[Grill, made] appears in review 	[ 1 4 ]
+
+[turkey, roasted] appears in review 	[ 1 4 ]
+
+[service, great] appears in review 	[ 1 4 ]
+
+[food, fresh] appears in review 	[ 1 4 ,   1 8 ]
+
+[food, interesting] appears in review 	[ 1 4 ]
+
+[fish taco, good] appears in review 	[ 1 5 ]
+
+[taco, good] appears in review 	[ 1 5 ]
+
+[waiter, slow] appears in review 	[ 1 5 ]
+
+[time, long] appears in review 	[ 1 5 ]
+
+[thing, second] appears in review 	[ 1 5 ]
+
+[thing, sure] appears in review 	[ 1 5 ]
+
+[food, cold] appears in review 	[ 1 5 ]
+
+[waiter Drew, group] appears in review 	[ 1 6 ]
+
+[Drew, group] appears in review 	[ 1 6 ]
+
+[group, large] appears in review 	[ 1 6 ]
+
+[food, satisfying] appears in review 	[ 1 6 ]
+
+[food, strike] appears in review 	[ 1 6 ]
+
+[food, typical] appears in review 	[ 1 6 ]
+
+[food, American] appears in review 	[ 1 6 ]
+
+[way, bad] appears in review 	[ 1 6 ]
+
+[options, Vegan] appears in review 	[ 1 6 ]
+
+[options, are] appears in review 	[ 1 6 ]
+
+[you, take] appears in review 	[ 1 6 ]
+
+[salad, Large] appears in review 	[ 1 7 ]
+
+[salad, lot] appears in review 	[ 1 7 ]
+
+[Salad, Greek] appears in review 	[ 1 7 ]
+
+[nachos, Good] appears in review 	[ 1 7 ]
+
+[fries, great] appears in review 	[ 1 7 ]
+
+[waffle fries, great] appears in review 	[ 1 7 ]
+
+[waiter, friendly] appears in review 	[ 1 7 ]
+
+[waiter, attentive] appears in review 	[ 1 7 ]
+
+[you, heard] appears in review 	[ 1 8 ]
+
+[They, wines] appears in review 	[ 1 8 ]
+
+[wines, decent] appears in review 	[ 1 8 ]
+
+[Pinot Noir, favorite] appears in review 	[ 1 8 ]
+
+[Noir, favorite] appears in review 	[ 1 8 ]
+
+[food, Fast] appears in review 	[ 1 8 ]
+
+[restaurants, busy] appears in review 	[ 1 9 ]
+
+[hopes, high] appears in review 	[ 1 9 ]
+
+[food, OK] appears in review 	[ 1 9 ]
+
+[service, good] appears in review 	[ 2 0 ]
+
+[ambience, pleasant] appears in review 	[ 2 0 ]
+
+[Pittsburghers, older] appears in review 	[ 2 0 ]
+
+[game, airing] appears in review 	[ 2 0 ]
+
+--------------------------------------------------------------
+
+query opinion [service, good] has similar opinions: 
+
+	[Service, great] appears in review 	[ 5 ]
+
+	[Service, excellent] appears in review 	[ 1 ,   2 ]
+
+	[service, great] appears in review 	[ 1 4 ]
+
+	[service, solid] appears in review 	[ 1 3 ]
+
+	[service, warm] appears in review 	[ 8 ]
+
+	[service, good] appears in review 	[ 2 0 ]
+
+query opinion [service, bad] has similar opinions: 
+
+	[Service, great] appears in review 	[ 5 ]
+
+	[Service, excellent] appears in review 	[ 1 ,   2 ]
+
+	[service, good] appears in review 	[ 2 0 ]
+
+	[service, great] appears in review 	[ 1 4 ]
+
+	[service, solid] appears in review 	[ 1 3 ]
+
+query opinion [atmosphere, good] has similar opinions: 
+
+	[ambience, pleasant] appears in review 	[ 2 0 ]
+
+	[ambiance, nice] appears in review 	[ 4 ]
+
+	[feeling, warm] appears in review 	[ 1 2 ]
+
+	[atmosphere, great] appears in review 	[ 5 ]
+
+	[atmosphere, nice] appears in review 	[ 3 ]
+
+query opinion [food, delicious] has similar opinions: 
+
+	[meal, wonderful] appears in review 	[ 1 ]
+
+	[meal, delicious] appears in review 	[ 4 ]
+
+	[meat, flavorful] appears in review 	[ 2 ]
+
+	[bread stick, delicious] appears in review 	[ 1 ]
+
+	[chicken fingers, homemade] appears in review 	[ 1 0 ]
+
+	[restaurant, nice] appears in review 	[ 5 ]
+
+	[beer selection, good] appears in review 	[ 6 ]
+
+	[fish taco, good] appears in review 	[ 1 5 ]
+
+	[salad, delicious] appears in review 	[ 1 ]
+
+	[California salad, delicious] appears in review 	[ 1 ]
+
+	[turkey, roasted] appears in review 	[ 1 4 ]
+
+	[taco, good] appears in review 	[ 1 5 ]
+
+	[fries, amazing] appears in review 	[ 4 ]
+
+	[waffle fries, amazing] appears in review 	[ 4 ]
+
+	[fries, great] appears in review 	[ 1 7 ]
+
+	[waffle fries, great] appears in review 	[ 1 7 ]
+
+	[waiter, attentive] appears in review 	[ 1 7 ]
+
+	[food, hearty] appears in review 	[ 8 ]
+
+	[food, satisfying] appears in review 	[ 1 6 ]
+
+	[food, great] appears in review 	[ 5 ]
+
+	[food, fresh] appears in review 	[ 1 4 ,   1 8 ]
+
+	[food, interesting] appears in review 	[ 1 4 ]
+
+	[food, excellent] appears in review 	[ 1 3 ]
+
+--------------------------------------------------------------

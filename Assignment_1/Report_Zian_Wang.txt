@@ -1,0 +1,18 @@
+Report
+Name: Zian Wang
+
+Please put the assign1_sentences.txt under ziw42_a1/Assignment 1/data.
+
+Results:
+The probability of "Water" appearing after "<s>" is 0.0004
+The probability of "<s>" appearing after "Water" is 0
+The probability of "economy" appearing after "planned" is 0.046511627907
+The probability of "</s>" appearing after "." is 1.0
+-5.40444777851	<s> He said . </s>
+-2.95491027903	<s> Israel and Jordan signed the peace process . </s>
+-5.83196914992	<s> It is expected . </s>
+-1.75175078874	<s> He said . </s>
+-0.589582112387	<s> Israel and Jordan signed the peace process . </s>
+-1.66383150197	<s> It is expected . </s>
+
+Process finished with exit code 0

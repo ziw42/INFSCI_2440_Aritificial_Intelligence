@@ -1,0 +1,223 @@
+Artificial intelligent
+Name: Zian Wang
+
+-------------------------------------------------------------
+The overall results:
+C:\Users\Zian\AppData\Local\Programs\Python\Python39\python.exe "A:/Aritifical_Intelligent_A3/Assignment 3/Assignment3Main.py"
+================Task 1================
+Model 1:
+Mean squared error	22.536529157698702
+--------------------
+Model 2:
+Mean squared error	22.6597514243199
+================Task 2================
+Model 1:
+Accuracy	0.328125	Macro_F1	0.15584415584415584	Macro_Precision	0.19885057471264367	Macro_Recall	0.2363636363636364
+Category	teacher	F1	[0.28571429]	Precision	[0.66666667]	Recall	[0.18181818]
+Category	health	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	services	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	at_home	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	other	F1	[0.49350649]	Precision	[0.32758621]	Recall	[1.]
+--------------------
+Model 2:
+Accuracy	0.296875	Macro_F1	0.09156626506024096	Macro_Precision	0.059375	Macro_Recall	0.2
+Category	teacher	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	health	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	services	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	at_home	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	other	F1	[0.45783133]	Precision	[0.296875]	Recall	[1.]
+================Task 3================
+Model 1:
+Accuracy	0.625	Hamming loss	0.375
+--------------------
+Model 2:
+Accuracy	0.375	Hamming loss	0.625
+
+Process finished with exit code 0
+
+
+-------------------------------------------------------------
+Explanation:
+
+I created a file named: "Process.py".
+
+Process.py
+--- Read_data()
+--- @Input: null
+--- @Output: the processed train and test data, stored in data frames.
+--- @This function is used to 1. read train and test data sets from local disk, and store them into 2 data frames. 
+---    2. set the column names to the data frames. 3.divide the 16th attribute(edusupport) column of the data frames.
+--- @I divide the "edusupport" column into 3 columns: es_family, es_school, es_paid. The "es" in the name means 
+         education support, and if the value of the corresponding column is 0 means this student does not have this 
+         support. On the contrary, if the value is 1 means the student has this support. For example, if for one row, 
+         (es_family, es_school, es_paid) = (1, 1, 0) means this student has family and school support. And if all these three 
+         values are 0 means this student has 'no' education support. After dividing "edusupport" into 3 columns, we will
+         drop the original "edusupport" column from the data frames.
+--- @The format of the output data frames is:
+              school  sex  age  address  famsize  Pstatus  Medu  Fedu  Mjob  Fjob  reason  guardian  traveltime  studytime  failures  es_family  es_school  es_paid  nursery  higher  internet  romantic  famrel  freetime  goout  Dalc  Walc  health  absences  G3
+         1.  ......
+         2.  ......
+         ...  ......
+         N. ......
+
+
+I did not put the codes for tuning into "Taskxx.py" files because I have to change the tuning codes time and time again 
+to get my "optimized" parameters. I put the tuning codes into files whose names like: "testxxx.py". "test1.py" is used to
+tune task 1, "test2.py" is used to tune  task 2, and "test3_xxx.py" are used to tune task 3. I put them into a .zip file under
+"Assignment 3" folder. If you want to run them, please put them under "Assignment 3" folder.
+
+I mostly use GridSearchCV() function to tune the parameters. We can try several estimators and several parameter sets
+in one run by useing this function. I used them inside "testxx.py" files.
+
+I put "assign3_students_train.txt" and "assign3_students_test.txt" under "Assignment 3/data". Please put them under
+this path to run the "Assignment3Main.py".
+
+Codes have essential comments, please read them if necessary.
+
+-------------------------------------------------------------
+Task 1:
+
+I keep all features for this task because I think even some of the features are correlated, PCA can deal with this 
+problem. Therefore, I scale and normalize the data, then do PCA to decrease the number of the input features.
+
+
+---@Top2 models with parameters:
+
+---@1. Kernal Ridge regression
+        alpha=0.3, kernel=polynomial, degree=9
+        
+        I tried alpha=[0.2-0.9], degree-[1-9], kernel=['linear','polynomial','rbf','laplacian']
+
+---@2. SVR
+        C=2, degree=1, gamma=scale
+        
+        I tried C=[0.5-9], degree=[1-9], gamma=['scale','auto']
+
+================Task 1================
+Model 1:
+Mean squared error	22.536529157698702
+--------------------
+Model 2:
+Mean squared error	22.6597514243199
+
+The performances are basically around MSE~=5 or 6 in 10 fold cross validation, and MSE~=25-30 in test data.
+The time to train these two models is very short, less than 5 second on my computer.
+
+-------------------------------------------------------------
+Task 2:
+
+I still keep all features in this task for the same reason: PCA can remove some unnecessary features. I still firstly
+scale the data, then normalize, and do PCA.
+
+---@Top 2 models with parameters:
+
+---@1.SVC
+        C=8, degree=9, gamma='auto', kernel='rbf'
+
+        I tried C=[1-9], degree=[1-9], kernel=['linear','poly','rbf','sigmoid'], gamma=['scale','auto']
+
+---@2.Categorical Naive Bayes
+        alpha=0.1
+
+        I tried alpha=[0.1-1.5]
+
+================Task 2================
+Model 1:
+Accuracy	0.328125	Macro_F1	0.15584415584415584	Macro_Precision	0.19885057471264367	Macro_Recall	0.2363636363636364
+Category	teacher	F1	[0.28571429]	Precision	[0.66666667]	Recall	[0.18181818]
+Category	health	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	services	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	at_home	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	other	F1	[0.49350649]	Precision	[0.32758621]	Recall	[1.]
+--------------------
+Model 2:
+Accuracy	0.296875	Macro_F1	0.09156626506024096	Macro_Precision	0.059375	Macro_Recall	0.2
+Category	teacher	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	health	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	services	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	at_home	F1	[0.]	Precision	[0.]	Recall	[0.]
+Category	other	F1	[0.45783133]	Precision	[0.296875]	Recall	[1.]
+================Task 3================
+
+We can see the performances are actually pretty bad. We can see many categories' F1, precision, and recall values
+are all 0. This is because our models do not predict any rows to these categories, which means our models are
+actually pretty bad. For example, the SVC model will only predict the rows in test data to "teacher" and "other"
+label, and the categorical naive bayes predicts all rows in test data to the "other" label. Future tuning is needed,
+but in the limited time these are the top 2 models I found.
+
+The time to train these two models is very short, less than 5 seconds on my computer.
+
+-------------------------------------------------------------
+Task 3:
+
+In this tagging task, I use One-vs-the-Rest strategy to solve. Since we have already divide the "edusupport" feature
+into 3 columns: "es_family", "es_school", and "es_paid", we can firstly predict the "es_family" column to find if this 
+student has family support or not. Then we predict "es_school" to find if the student get school support, then predict
+"es_paid". By doing this, we got a multi-output model. The format of the outputs is like:
+[1 0 1,
+ 0 1 0,
+ ...... ,
+ 0 0 0]
+
+In this task, I remove the "traveltime" feature in the data. The reason is I ran "recursive feature elimination"(RFE)
+firstly, and output the ranking of all features. Through RFE, we can know the lowest ranked feature is "G3", then
+"traveltime", then "health", then "absences", then "nursery". I tried to remove one of them, then two, then three.
+We can find that even removing many combinations of these features can improve the performance, if we only
+remove the "traveltime" feature, the performance will be the best among all these attemps. Therefore,I just remove 
+the "traveltime" column.
+
+Then, I fixed the features to use, and use GridSearchCV() function to try the models and parameters. The best 
+model I found is MLPClassifier, which belongs to neural network.
+
+Because in sklearn, the accuracy_score function and hamming_loss function do not support multi-label results,
+I wrote my own function to get the accuracy and hamming_loss.
+
+accuracy_hamming_score()
+Input: 
+     true_family: the truth of "es_family" column in test data.
+     true_school: the truth of "es_school" column in test data.
+     ture_paid: the truth of "es_paid" column in test data.
+     pre_family: the prediction of "es_family".
+     pre_school: the prediction of "es_school".
+     pre_paid: the prediction of "es_paid".
+Output:
+     The accuracy and hamming loss stored in a tuple.
+This function iterate over rows of truth and predict data frames. It will compare each row of the truth and predict,
+only if the truth of "es_family", "es_school", and "es_paid" all match the predict of these 3 features, it will count this
+row as a correct row. Then we divide the number of correct rows by the number of all the rows to get the accuracy,
+and hamming_loss=1-accuracy.
+
+---@Top 2 models with parameters:
+
+---@1.MLPClassifier
+     max_iter=10000, hidden_layer_sizes=10000, learning_rate_init=0.08, random_state=1
+
+     I tried max_iter=[100-10000], hidden_layer_sizes=[200-50000], learning_rate_init=[0.001-1].
+
+---@2.SVC
+     C=1, degree=1, gamma='scale', kernel='rbf'
+
+     I tried C=[1-9], degree=[1-9], kernel=['linear', 'polynomial', 'rbf', 'sigmoid'], gamma=['scale','auto']
+
+
+================Task 3================
+Model 1:
+Accuracy	0.625	Hamming loss	0.375
+--------------------
+Model 2:
+Accuracy	0.375	Hamming loss	0.625
+
+ 
+For the MLPClassifier, actually only the learning_rate_init parameter "matters" in this task. If we set max_iter larger
+will not influence the performance because this model actully converged before reaching the max iteration. Therefore,
+as long as we do not set the max_iter to a very small number, for example 100, this parameter will not influence the
+performance. Also, for hidden_layer_sizes, if we set it very large, like 50000, it will only decrease the training speed, the
+performance will not be better. Therefore, as long as we do not set it to a very small number, for example 200, it will
+not influence the performance a lot. As far as I tried, when this parameter is bigger than 1000, the performance will
+be very similar. The random state is used to assign the random number generation for weights and bias initialization.
+Therefore, we should keep it the same to make the result reproducible. I simply use 1 for this parameter.
+
+We can see the performances are not very good. The best one's accuracy can reach 62.5%.
+
+The time to train these two models is longer than which in task 1 and 2. However, the time is still short, which is about
+10 seconds on my computer.
